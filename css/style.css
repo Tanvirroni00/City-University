@@ -1,0 +1,516 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+header {
+    background-image: linear-gradient(to bottom, rgb(19 19 20 / 50%), rgb(0 0 8 / 73%)),
+        url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+header::before {
+    background-color: red;
+    position: absolute;
+    width: 100%;
+    display: block;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link::after {
+    content: '';
+    width: 0;
+    display: block;
+    height: 2px;
+    background-color: #ff0000;
+    bottom: -2;
+    margin: auto;
+    transition: .7s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.header-content {
+    color: #fff;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-content h1 {
+    text-transform: uppercase;
+    margin: 20px auto;
+    font-size: 65px;
+    font-family: fangsong;
+    font-weight: 700;
+    color: red;
+}
+
+.header-content p {
+    text-transform: capitalize;
+
+    margin: 20px 50px;
+    margin-bottom: 40px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.btn-custom {
+    color: #fff;
+    border: 1px solid #fff;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-custom:hover {
+    background: #ff5e00;
+    color: #fff;
+    border: 1px solid transparent;
+    transition: .4s linear;
+}
+
+.Course {}
+
+.Course h1 {
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.Course span {
+    height: 1px;
+    display: block;
+    width: 80%;
+    background: red;
+    margin: auto;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+.Course span::after {
+    content: '';
+    height: 3px;
+    position: absolute;
+    display: block;
+    width: 80px;
+    background: red;
+    margin: auto;
+    top: 0;
+    transform: translateY(-50%);
+    left: 0;
+    border-radius: 50%;
+    animation: updown 2s linear alternate infinite;
+}
+
+@keyframes updown {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 90%;
+    }
+
+}
+
+.Course p {
+    margin: 20px 0;
+}
+
+.Course .Course-item {
+    padding: 52px 5px;
+    border: 1px solid #9999;
+    text-align: center;
+    background: #fff;
+    color: black;
+    /* min-height: 00px; */
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    height: 400px;
+}
+
+.Course .Course-item h1 {
+    font-family: 'Poppins';
+    font-size: 44px;
+    font-weight: 400;
+}
+
+.Course .Course-item p {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.Course .Course-item:hover {
+
+    transition: .40s all;
+    cursor: pointer;
+
+    background: #ff5e00;
+    color: #fff;
+}
+
+.Campus {}
+
+.Campus h1 {
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-family: 'Poppins';
+}
+
+.Campus span {
+    display: block;
+    height: 1px;
+    background: red;
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.Campus span::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 80px;
+    background: #ff0000;
+    height: 3px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+    animation: upd 2s linear alternate infinite;
+
+}
+
+@keyframes upd {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 90%;
+    }
+}
+
+.Campus p {
+    margin: 20px 0;
+}
+
+.banner {
+    margin: 40px auto;
+}
+
+.banner .items {
+    position: relative;
+
+}
+
+.banner .items:hover {
+    box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
+
+}
+
+
+
+.layer p {
+    position: absolute;
+    top: 80%;
+    left: 21%;
+    color: #fff;
+    background-color: red;
+    font-size: 40px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: .4s linear;
+}
+
+.items:hover .layer p {
+    top: 50%;
+    opacity: 1;
+}
+
+.items {}
+
+
+.facilitie-item {
+    height: 600px;
+    box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
+    border: 1px solid;
+    padding: 10px;
+}
+
+.facilitie-item:hover {
+    transform: scale(1.10);
+    cursor: pointer;
+    background-color: #ff5e00;
+}
+
+.facilitie-item h1 {
+    margin: 20px auto;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-family: fangsong;
+}
+
+.facilitie-item p {
+    margin: 20px auto;
+}
+
+#blog {}
+
+#blog .students {}
+
+#blog .students h1 {
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-family: 'Poppins';
+}
+
+#blog .students span {
+    display: block;
+    background: red;
+    height: 2px;
+    margin: auto;
+    width: 50%;
+    margin: 20px auto;
+    position: relative;
+
+}
+
+.students span::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    background: red;
+    height: 2px;
+    border-right: 20px solid #fff;
+    border-left: 20px solid #fff;
+    top: 1px;
+    left: 0;
+    overflow: hidden;
+    transform: translateY(-50%);
+    animation: students 4s linear infinite;
+
+}
+
+@keyframes students {
+    0% {
+        left: 0%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+#blog .students p {
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+
+.comment-box {
+    margin: 30px auto;
+    background: #bbbbbbfa;
+    padding: 13px;
+    border-radius: 10px;
+    margin-top: 100px;
+    border-left: 5px solid red;
+    cursor: pointer;
+}
+
+.comment-box:hover {
+    background-color: #ff0000;
+}
+
+.comment-box .item {}
+
+.comment-box .item .img {
+    border: 1px solid;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.comment-box .item p {}
+
+.comment-box .content {
+    margin: 20px auto;
+}
+
+.comment-box .content h5 {
+    font-size: 20px;
+    /* font-family: sans-serif; */
+    /* color: red; */
+    font-family: 'Poppins';
+    font-size: 20px;
+    background: #fff;
+    width: fit-content;
+}
+
+#blog .comment-box .content span {
+    font-family: 'Poppins';
+    font-size: 16px;
+    margin: 20px auto;
+    /* color: red; */
+    font-weight: 400;
+}
+
+#blog .comment-box .content p {
+    margin: 20px auto;
+}
+
+/* ====================================/blog======================== */
+#contact {
+    background-image: linear-gradient(to bottom, rgb(19 19 20 / 50%), rgb(0 0 8 / 73%)),
+        url(../images/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 50px;
+    min-height: 60vh;
+}
+
+#contact .contact-us {
+    min-height: 60vh;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+#contact .contact-us h1 {
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-family: 'Poppins';
+    color: #fff;
+}
+
+.btn-contact {
+    color: #fff;
+    border: 1px solid #fff;
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    background: #ff5e00;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.btn-contact:hover {
+    background: red;
+    color: #fff;
+    border: 1px solid red;
+    transition: .4s linear;
+}
+
+/* ====================================/blog======================== */
+footer {
+    background: black;
+}
+
+.f-items {
+    color: #fff;
+    border-bottom: 2px solid red;
+}
+
+.f-items img {
+    height: 80px;
+    width: 80px;
+    background: fff;
+    font-size: 20px;
+    /* color: red; */
+    border: 1px solid #48414af7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.f-items span {
+    margin: 20px auto;
+    padding: 20px au;
+}
+
+.f-items p {
+    margin: 25px auto;
+}
+
+.f-items2 {
+    margin: 20px;
+    /* margin: auto; */
+    text-align: left;
+    padding: 5px;
+    height: 350px;
+}
+
+.f-items2 h5 {
+    color: #fff;
+    font-size: 20px;
+    /* border-bottom: 1px solid red; */
+    margin: 20px auto;
+    text-align: left;
+}
+
+.f-items2 span {
+    background: red;
+    height: 2px;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.f-items2 p {
+    color: #fff;
+    margin: 25px auto;
+}
+
+.f-items0 {
+    margin: 20px auto;
+    display: flex;
+    cursor: pointer;
+}
